@@ -1,4 +1,9 @@
-FROM python
-RUN pip install requests
-COPY map-exm.py /home/map-exm/
-CMD python3 /home/map-exm/map-exm.py
+FROM node:alpine as builder
+WORKDIR "/app"
+COPY package.json .
+RUN npm install
+COPY . .
+RUN npm run build
+
+FROM nginx
+COPY --from=builder /app/build /usr/share/nginx/html
