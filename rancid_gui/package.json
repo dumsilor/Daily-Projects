@@ -1,0 +1,16 @@
+{
+  "name": "rancid_gui",
+  "version": "1.0.0",
+  "description": "This is a GUI for Rancid CLI",
+  "main": "app.js",
+  "scripts": {
+    // npm start diye script er vitore call kora jay taile start e mentiond command call hobe
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mosiur Rahman",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
