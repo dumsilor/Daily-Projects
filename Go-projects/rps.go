@@ -1,5 +1,7 @@
 package main
 
+import "os"
+
 /* Using for loop for the array
 func main() {
 	var arr = []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
@@ -42,10 +44,10 @@ func main() {
 }
 */
 
-func main(){
-	var city_names := []string{America, India, Bangladesh, Australia, Canada, China, Singapore}
-	file,err := os.Create("Country_name.txt")
-	for index,city_name := range city_name{
+func main() {
+	city_names := []string{America, India, Bangladesh, Australia, Canada, China, Singapore}
+	file, err := os.Create("Country_name.txt")
+	for index, city_name := range city_name {
 
 	}
 
